@@ -1,6 +1,6 @@
 import Groq from 'groq-sdk';
 
-const groq = new Groq({ apiKey: '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' });
+const groq = new Groq({ apiKey: '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', dangerouslyAllowBrowser: true });
 
 export async function sendMessageToBot(message) {
   try {

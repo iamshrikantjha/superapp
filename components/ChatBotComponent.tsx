@@ -3,8 +3,12 @@ import React, { useState, useCallback, useEffect } from 'react'
 import { ImageBackground, View } from 'react-native'
 import { GiftedChat } from 'react-native-gifted-chat'
 
+const WALLPAPER = 'https://w0.peakpx.com/wallpaper/522/552/HD-wallpaper-lionel-messi-football-illllustration-vector-art.jpg'
+const BOT_AVATAR = 'https://www.freevector.com/uploads/vector/preview/91217/VecteezyLionel-MessiCharacterIllustration03RA0223_generated.jpg'
+
 export function ChatBotComponent() {
   const [messages, setMessages] = useState([])
+
 
   useEffect(() => {
     setMessages([
@@ -15,7 +19,7 @@ export function ChatBotComponent() {
         user: {
           _id: 2,
           name: 'Messi Bot',
-          avatar: 'https://www.freevector.com/uploads/vector/preview/91217/VecteezyLionel-MessiCharacterIllustration03RA0223_generated.jpg',
+          avatar: BOT_AVATAR,
         },
       },
     ])
@@ -36,7 +40,7 @@ export function ChatBotComponent() {
         user: {
           _id: 2,
           name: 'Messi Bot',
-          avatar: 'https://www.freevector.com/uploads/vector/preview/91217/VecteezyLionel-MessiCharacterIllustration03RA0223_generated.jpg',
+          avatar: BOT_AVATAR,
         },
       }
 
@@ -48,7 +52,7 @@ export function ChatBotComponent() {
 
   return (
     <ImageBackground
-      source={{ uri: 'https://w0.peakpx.com/wallpaper/522/552/HD-wallpaper-lionel-messi-football-illllustration-vector-art.jpg' }}
+      source={{ uri: WALLPAPER }}
     style={{
       // backgroundColor: 'purple',
       flex: 1,
