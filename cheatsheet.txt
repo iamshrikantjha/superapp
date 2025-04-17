@@ -1,2 +1,2 @@
-1. yarn start
+1. yarn / npm i (default) / pnpm i
 2. npx expo -c
